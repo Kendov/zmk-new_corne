@@ -84,9 +84,6 @@
 <svg id="mdi:skip-next">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
 </svg>
-<svg id="mdi:skip-previous">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
-</svg>
 <svg id="mdi:toggle-switch">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch" viewBox="0 0 24 24"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
 </svg>
@@ -1288,7 +1285,7 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 153)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:skip-previous"/>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 75%">PREVIOUS</tspan></text>
 </g>
 <g transform="translate(728, 147)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1302,15 +1299,17 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:skip-next"/>
 </g>
-<g transform="translate(840, 147)" class="key trans keypos-39">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(840, 147)" class="key keypos-39">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:toggle-switch"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:bluetooth"/>
+<use href="#mdi:usb" xlink:href="#mdi:usb" x="-8" y="-24" height="15" width="15.0" class="key shifted glyph mdi:usb"/>
 </g>
-<g transform="translate(896, 161)" class="key trans keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(896, 161)" class="key keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g transform="translate(952, 161)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
