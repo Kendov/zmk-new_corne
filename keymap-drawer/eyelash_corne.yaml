@@ -93,10 +93,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: nb, h: '$$mdi:gesture-tap-hold$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', s: _}
-  - {t: '0', s: )}
+  - {t: '0', h: sb}
   - {t: '=', s: +}
   sb:
   - {t: '`', s: '~'}
@@ -142,10 +142,10 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
   - '?'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: nb, h: '$$mdi:gesture-tap-hold$$', type: held alternate}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: sb, h: '$$mdi:gesture-tap-hold$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Fn:
   - F1
