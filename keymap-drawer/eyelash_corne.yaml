@@ -125,7 +125,7 @@ layers:
   - )
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE)))
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -139,8 +139,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
-  - '?'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: nb, h: '$$mdi:gesture-tap-hold$$', type: held alternate}
   - $$mdi:keyboard-space$$
