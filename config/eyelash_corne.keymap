@@ -55,19 +55,14 @@
     combos {
         compatible = "zmk,combos";
 
-        copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <30 31>;
-        };
-
-        paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <32 33>;
-        };
-
         delete {
             bindings = <&kp DELETE>;
             key-positions = <12 11>;
+        };
+
+        DoubleQuotes {
+            bindings = <&kp PT_DOUBLE_QUOTES>;
+            key-positions = <0 1>;
         };
     };
 
@@ -91,10 +86,10 @@
         number {
             display-name = "NUMBER";
             bindings = <
-&none      &none  &kp PT_GRAVE  &kp PT_ACUTE  &kp TILDE          &none                                   &mmv MOVE_UP                     &none      &kp N7          &kp N8     &kp N9  &none         &none
-&kp LSHFT  &none  &none         &none         &kp DOUBLE_QUOTES  &kp APOS                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4          &kp N5     &kp N6  &kp DOT       &kp RIGHT_SHIFT
-&kp LCTRL  &none  &none         &kp AMPS      &kp LC(PIPE)       &kp SEMI  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp UNDER  &kp N1          &kp N2     &kp N3  &kp PT_SLASH  &kp RCTRL
-                                &none         &sl 1              &none                                                                    &kp MINUS  &lt 2 NUMBER_0  &kp EQUAL
+&none      &none  &kp PT_GRAVE  &kp PT_ACUTE  &kp PT_TILDE          &none                                            &mmv MOVE_UP                     &none        &kp N7        &kp N8     &kp N9  &none         &none
+&kp LSHFT  &none  &none         &none         &kp PT_DOUBLE_QUOTES  &kp PT_APOSTROPHE                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK    &kp N4        &kp N5     &kp N6  &kp DOT       &kp RIGHT_SHIFT
+&kp LCTRL  &none  &none         &kp AMPS      &kp PT_PIPE           &kp PT_SEMI        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp UNDER    &kp N1        &kp N2     &kp N3  &kp PT_SLASH  &kp RCTRL
+                                &none         &none                 &mo 1                                                                             &lt 2 MINUS  &kp NUMBER_0  &kp EQUAL
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -104,25 +99,25 @@
         symbol {
             display-name = "sb";
             bindings = <
-&kp PT_SQT        &kp EXCL  &kp AT             &kp HASH             &kp DLLR              &kp PRCNT                                  &mmv MOVE_UP                     &kp CARET     &kp AMPS               &kp ASTRK             &none               &kp MINUS     &kp EQUAL
-&kp LEFT_SHIFT    &none     &kp PT_LEFT_BRACE  &kp PT_LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp PT_BACKSLASH           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PT_SLASH  &kp RIGHT_PARENTHESIS  &kp PT_RIGHT_BRACKET  &kp PT_RIGHT_BRACE  &kp PT_ACUTE  &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &none     &none              &kp AMPS             &kp PIPE              &kp SEMI          &none                    &mmv MOVE_DOWN                   &none         &none                  &none                 &none               &none         &kp RCTRL
-                                               &none                &sl 1                 &kp SPACE                                                                   &kp RET       &sl 2                  &none
+&kp PT_SQT        &kp EXCL  &kp AT             &kp HASH             &kp DLLR              &kp PRCNT                                            &mmv MOVE_UP                     &kp CARET     &kp AMPS               &kp ASTRK             &none               &kp MINUS     &kp EQUAL
+&kp LEFT_SHIFT    &none     &kp PT_LEFT_BRACE  &kp PT_LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp PT_BACKSLASH                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PT_SLASH  &kp RIGHT_PARENTHESIS  &kp PT_RIGHT_BRACKET  &kp PT_RIGHT_BRACE  &kp PT_ACUTE  &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &none     &none              &kp AMPS             &kp PT_PIPE           &kp PT_SEMI       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &none         &none                  &none                 &none               &none         &kp RCTRL
+                                               &none                &kp SPACE             &mo 1                                                                                 &mo 2         &kp ENTER              &none
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         function {
             display-name = "Fn";
             bindings = <
-&kp F1          &kp F2  &kp F3        &kp F4       &kp F5     &kp F6                                  &mmv MOVE_UP                     &kp F7    &kp F8         &kp F9       &kp F10    &kp F11     &kp F12
-&kp LEFT_SHIFT  &none   &mkp LCLK     &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp INSERT  &kp DELETE
-&kp LCTRL       &none   &out OUT_TOG  &none        &none      &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none       &kp PRINTSCREEN
-                                      &bootloader  &none      &none                                                                    &none     &none          &bootloader
+&kp F1          &kp F2  &kp F3        &kp F4     &kp F5     &kp F6                                &mmv MOVE_UP                     &kp F7    &kp F8         &kp F9       &kp F10    &kp F11     &kp F12
+&kp LEFT_SHIFT  &none   &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp INSERT  &kp DELETE
+&kp LCTRL       &none   &out OUT_TOG  &none      &none      &mkp MB5  &kp HOME                    &mmv MOVE_DOWN                   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none       &kp PRINTSCREEN
+                                      &none      &none      &none                                                                  &none     &none          &none
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         settings {
