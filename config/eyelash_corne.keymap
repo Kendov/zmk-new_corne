@@ -69,6 +69,11 @@
             bindings = <&kp SPACE>;
             key-positions = <33 32>;
         };
+
+        Super {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <42 43>;
+        };
     };
 
     keymap {
